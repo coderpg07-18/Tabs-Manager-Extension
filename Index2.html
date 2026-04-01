@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser Extension - 4:30 hr - 6:35:11</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        min-width: 400px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box; /* Prevent Box overflows */
+        border: 1px solid #5f9341;
+        margin-bottom: 4px;
+      }
+
+      button {
+        background: #5f9341;
+        color: white;
+        padding: 10px 20px 10px 20px;
+        border: 1px solid #5f9341;
+        font-weight: bold;
+      }
+
+      #delete-btn {
+        background: white;
+        color: #5f9341;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      li {
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      li a {
+        color: #5f9341;
+        flex: 1;
+        word-break: break-all;
+      }
+
+      .delete-item {
+        background: none;
+        border: none;
+        color: red;
+        font-weight: bold;
+        padding: 0;
+        margin-left: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- input -->
+    <input type="text" id="input-el" />
+
+    <!-- save input button -->
+    <button id="input-btn">SAVE INPUT</button>
+
+    <!-- Tab Button -->
+    <button id="tab-btn">SAVE TAB</button>
+
+    <!-- Delete Button -->
+    <button id="delete-btn">DELETE ALL</button>
+
+    <!-- unlorderlist -->
+    <ul id="ul-el"></ul>
+
+    <script src="Index2.js"></script>
+  </body>
+</html>
